@@ -77,7 +77,7 @@ const DetailPage = () => {
 
   useEffect(() => {
     try {
-      axios(`http://localhost:3001/products/${id}`).then(({ data }) => {
+      axios(`https://servicie-fixer.onrender.com/products/${id}`).then(({ data }) => {
         if (data.name) {
           setProduct(data);
           setMainImage(data.firstImage);

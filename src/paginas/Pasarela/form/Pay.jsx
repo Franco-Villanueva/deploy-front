@@ -14,7 +14,7 @@ const Pay = ({formData}) => {
         }, 0);
         try {
             
-            const response = await axios.post('http://localhost:3001/users/mercadopago', {
+            const response = await axios.post('https://servicie-fixer.onrender.com/users/mercadopago', {
                 description: "Compra FixerShoes",
                 price: totalcarrito,
                 quantity: 1,

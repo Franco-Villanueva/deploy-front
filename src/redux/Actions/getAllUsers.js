@@ -4,7 +4,7 @@ import axios from "axios";
 export const getAllUsers= () => {
   return async function (dispatch) {
     try {
-      const response = await axios.get(`http://localhost:3001/users/`);
+      const response = await axios.get(`https://servicie-fixer.onrender.com/users/`);
       const usuarios = response.data;
       dispatch({ 
         type: GET_ALL_USERS, 

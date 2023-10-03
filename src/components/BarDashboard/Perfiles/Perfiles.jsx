@@ -52,7 +52,7 @@ const Perfiles = () => {
     }
     const verifyEmail = async (email) => {
         try {
-            const URL = "http://localhost:3001/users/email";
+            const URL = "https://servicie-fixer.onrender.com/users/email";
             const query = `?email=${email}`;
             const endpoint = URL + query;
             const res = await axios.get(endpoint);
@@ -71,7 +71,7 @@ const Perfiles = () => {
     console.log(verifyEmail("jsochoaco@unal.edu.co"));
     const handlePermanentDelete = async (id) => {
         try {
-          const endpoint = `http://localhost:3001/users/destroy/${id}`
+          const endpoint = `https://servicie-fixer.onrender.com/users/destroy/${id}`
           const response = await axios.delete(endpoint)
           console.log(response);
           const {data} = response

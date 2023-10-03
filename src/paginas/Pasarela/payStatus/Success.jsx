@@ -100,7 +100,7 @@ const Success = () => {
 
   useEffect(() => {
     if (secondsRemaining === 0) {
-      axios.post("http://localhost:3001/order/", { form });
+      axios.post("https://servicie-fixer.onrender.com/order/", { form });
       navigate("/");
     }
   }, [navigate, secondsRemaining]);

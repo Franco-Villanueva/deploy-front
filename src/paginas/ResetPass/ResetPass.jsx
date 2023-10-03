@@ -62,7 +62,7 @@ const ResetPass = () => {
         delete data.repeatPassword;
 
         try {
-            const response = await axios.post(`http://localhost:3001/reset/${token}`, data)
+            const response = await axios.post(`https://servicie-fixer.onrender.com/reset/${token}`, data)
             const {message, success} = response.data
             setMensaje(message)
             setFormDisabled(true)

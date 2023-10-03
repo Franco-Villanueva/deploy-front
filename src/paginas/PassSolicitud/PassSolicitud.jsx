@@ -12,7 +12,7 @@ const PassSolicitud = () => {
     const navigate = useNavigate()
     const verifyEmail = async (email) => {
         try {
-            const URL = "http://localhost:3001/users/email";
+            const URL = "https://servicie-fixer.onrender.com/users/email";
             const query = `?email=${email}`;
             const endpoint = URL + query;
             const res = await axios.get(endpoint);
@@ -30,7 +30,7 @@ const PassSolicitud = () => {
     const onSubmit = async (data) => {
         try {
             console.log(data);
-            const response = await axios.post(`http://localhost:3001/passuser/request-reset`, { email: data.email })
+            const response = await axios.post(`https://servicie-fixer.onrender.com/passuser/request-reset`, { email: data.email })
 
             const { message, success } = response.data
             setMensaje(message)

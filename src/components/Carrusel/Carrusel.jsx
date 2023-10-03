@@ -10,7 +10,7 @@ const Carrusel = () => {
 
   useEffect(() => {
     try {
-      axios(`http://localhost:3001/products/`).then(({ data }) => {
+      axios(`https://servicie-fixer.onrender.com/products/`).then(({ data }) => {
         if (data.data) {
           const avalaiableProducts = data.data.filter(
             (prod) => prod.status == true

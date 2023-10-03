@@ -4,7 +4,7 @@ import axios from "axios"
 export const getProductByName = (name) => {
   return async function (dispatch) {
     try {
-      const apiData = await axios.get(`http://localhost:3001/products/?name=${name}`);
+      const apiData = await axios.get(`https://servicie-fixer.onrender.com/products/?name=${name}`);
 
       const product = apiData.data;
       dispatch({ type: GET_NAME, payload: product });

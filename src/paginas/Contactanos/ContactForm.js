@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/mailing/contact', formData);
+      const response = await axios.post('https://servicie-fixer.onrender.com/mailing/contact', formData);
 
       if (response.status === 200) {
         // La solicitud se completó con éxito, muestra el mensaje de éxito

@@ -6,7 +6,7 @@ export const userFavoritos = (UserId) => {
   try {
     return async (dispatch) => {
       const response = await axios.get(
-        `http://localhost:3001/favorites/${UserId}`
+        `https://servicie-fixer.onrender.com/favorites/${UserId}`
       );
       dispatch({
         type: FAVORITOS,

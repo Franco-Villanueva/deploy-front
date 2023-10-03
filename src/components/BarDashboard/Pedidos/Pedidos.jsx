@@ -227,7 +227,7 @@ const Pedidos = () => {
       }
       else if (allOrders.length > 0) {
         setOrders(allOrders)
-        const endpoint = `http://localhost:3001/order/id/${id}`
+        const endpoint = `https://servicie-fixer.onrender.com/order/id/${id}`
         const response = await axios.get(endpoint)
         const orden = response.data
         if (isDetail) {
@@ -250,7 +250,7 @@ const Pedidos = () => {
       const id = idOrden
       if (origen === "DB") {
         try {
-          const endpoint = "http://localhost:3001/order/update"
+          const endpoint = "https://servicie-fixer.onrender.com/order/update"
           const body = {
             status: status,
             id: id

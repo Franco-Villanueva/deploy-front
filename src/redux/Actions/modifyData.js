@@ -5,7 +5,7 @@ export const modifyData = (userData) => {
   try {
     return async (dispatch) => {
       const response = await axios.patch(
-        `http://localhost:3001/users/${userData.id}`,
+        `https://servicie-fixer.onrender.com/users/${userData.id}`,
         userData
       );
       dispatch({

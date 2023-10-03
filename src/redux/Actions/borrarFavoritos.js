@@ -8,7 +8,7 @@ export const borrarFavoritos = ({ userData, product }) => {
     const fav = { UserId: userData.id, ProductId: product.id }
     return async (dispatch) => {
       const response = await axios.post(
-        `http://localhost:3001/favorites/delete`, fav
+        `https://servicie-fixer.onrender.com/favorites/delete`, fav
       );
       dispatch({
         type: DELETE_FAV,

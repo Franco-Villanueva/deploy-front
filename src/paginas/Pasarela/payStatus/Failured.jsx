@@ -93,7 +93,7 @@ const Failured = () => {
   useEffect(() => {
     if (secondsRemaining === 0) {
       console.log(form)
-      axios.post('http://localhost:3001/order/', { form })
+      axios.post('https://servicie-fixer.onrender.com/order/', { form })
       navigate("/");
     }
   }, [navigate, secondsRemaining]);

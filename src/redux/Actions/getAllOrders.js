@@ -4,7 +4,7 @@ import axios from "axios";
 export const getAllOrders = () => {
   return async function (dispatch) {
     try {
-      const response = await axios.get(`http://localhost:3001/products`);
+      const response = await axios.get(`https://servicie-fixer.onrender.com/products`);
       const ordenes = response.data;
 
       dispatch({ 

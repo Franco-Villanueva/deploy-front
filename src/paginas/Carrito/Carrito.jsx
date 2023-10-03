@@ -37,7 +37,7 @@ const Carrito = () => {
 
   const agregarCarrito = async () => {
     try {
-      const response = await axios.post("http://localhost:3001/car-shop", {
+      const response = await axios.post("https://servicie-fixer.onrender.com/car-shop", {
         userId: idVariable,
         products: carritoById,
       });

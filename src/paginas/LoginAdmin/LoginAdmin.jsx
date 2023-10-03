@@ -32,7 +32,7 @@ const LoginAdmin = () => {
   const userAdmin = async (email, event) => {
     event.preventDefault();
     try {
-      const URL = "http://localhost:3001/users/email";
+      const URL = "https://servicie-fixer.onrender.com/users/email";
       const query = `?email=${email}`;
       const endpoint = URL + query;
       const res = await axios.get(endpoint);

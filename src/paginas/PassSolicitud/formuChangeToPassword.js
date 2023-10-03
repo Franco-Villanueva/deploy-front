@@ -18,7 +18,7 @@ const FormChangeToPassword = () => {
 
         try {
             const response = await axios.get(
-                `http://localhost:3001/request-reset`, data.email
+                `https://servicie-fixer.onrender.com/request-reset`, data.email
             );
             // Manejar la respuesta, por ejemplo, mostrar un mensaje de éxito
             console.log("Correo enviado con éxito");

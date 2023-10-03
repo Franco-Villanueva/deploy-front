@@ -7,7 +7,7 @@ export const getFav = ({ userData }) => {
         const fav = { UserId: userData.id }
 
         return async (dispatch) => {
-            const response = await axios(`http://localhost:3001/favorites/${fav.UserId}`);
+            const response = await axios(`https://servicie-fixer.onrender.com/favorites/${fav.UserId}`);
             console.log(response);
             dispatch({
 

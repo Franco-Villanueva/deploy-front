@@ -61,7 +61,7 @@ const Productos = () => {
     }
     const handlePermanentDelete = async (id) => {
       try {
-        const endpoint = `http://localhost:3001/products/destroy/${id}`
+        const endpoint = `https://servicie-fixer.onrender.com/products/destroy/${id}`
         const response = await axios.delete(endpoint)
         console.log(response);
         const {data} = response

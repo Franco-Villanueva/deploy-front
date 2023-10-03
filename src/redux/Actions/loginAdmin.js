@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const loginAdmin = (userData) => {
     try {
-        const endpoint = "http://localhost:3001/auth/login"
+        const endpoint = "https://servicie-fixer.onrender.com/auth/login"
         return async (dispatch) => {
             const response= await axios.post(endpoint, userData);
             console.log(response);

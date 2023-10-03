@@ -19,7 +19,7 @@ const LogicDelete = (props) => {
     const dispatchBorrado = async () => {
         if (valueSelect === "false") {
             try {
-                const endpoint = `http://localhost:3001/products/soft-delete/${product.id}`
+                const endpoint = `https://servicie-fixer.onrender.com/products/soft-delete/${product.id}`
                 const response = await axios.patch(endpoint)
                 const {data} = response
                 const {message} = data
@@ -37,7 +37,7 @@ const LogicDelete = (props) => {
         }
         else if (valueSelect === "true") {
             try {
-                const endpoint = `http://localhost:3001/products/soft-active/${product.id}`
+                const endpoint = `https://servicie-fixer.onrender.com/products/soft-active/${product.id}`
                 const response = await axios.patch(endpoint)
                 const {data} = response
                 const {message} = data

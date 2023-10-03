@@ -8,7 +8,7 @@ export const filterBack = (category) => {
         if(category=== 'DEFAULT'){
         return dispatch({ type: FILTER_BACK, payload: [] });
         }
-      const apiData = await axios.get(`http://localhost:3001/categories/catprod/?catName=${category}`);
+      const apiData = await axios.get(`https://servicie-fixer.onrender.com/categories/catprod/?catName=${category}`);
       const categorias = apiData.data;
       dispatch({ type: FILTER_BACK, payload: categorias });
     } catch (error) {

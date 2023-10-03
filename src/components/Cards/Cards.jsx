@@ -26,7 +26,7 @@ const Cards = () => {
     } = useInfiniteQuery(
         ["products"],
         ({ pageParam = 1 }) => {
-            const apiUrl = `http://localhost:3001/pagination/?page=${pageParam}`;
+            const apiUrl = `https://servicie-fixer.onrender.com/pagination/?page=${pageParam}`;
             return axios.get(apiUrl).then((response) => response.data);
         },
         {

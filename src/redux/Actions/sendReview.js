@@ -6,7 +6,7 @@ export const sendReview = (review) => {
   try {
     return async (dispatch) => {
       const response = await axios.post(
-        "http://localhost:3001/users/reviews",
+        "https://servicie-fixer.onrender.com/users/reviews",
         review
       );
       dispatch({
